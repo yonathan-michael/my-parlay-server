@@ -1,0 +1,33 @@
+{
+    "name": "my-parlay-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "babel ./src --out-dir ./build",
+        "start": "nodemon --exec babel-node src/index.js",
+        "lint": "eslint ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.15.7",
+        "@babel/core": "^7.15.5",
+        "@babel/node": "^7.15.4",
+        "@babel/preset-env": "^7.15.6",
+        "@babel/runtime": "^7.15.4",
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.24.2",
+        "eslint-plugin-prettier": "^4.0.0",
+        "nodemon": "^2.0.13",
+        "prettier": "^2.4.1"
+    },
+    "dependencies": {
+        "apollo-server-express": "^2.25.2",
+        "express": "^4.17.1",
+        "graphql": "^15.6.0"
+    }
+}
